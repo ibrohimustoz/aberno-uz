@@ -23,8 +23,10 @@
   /* Semantik tokenlar — qorongʻu rejimda qayta belgilanadi */
   --surface: #ffffff;
   --strong: var(--navy);
-  --btn-bg: var(--navy);
-  --btn-bg-hover: var(--navy-2);
+  --orange: #ea580c;
+  --orange-2: #c2410c;
+  --btn-bg: var(--orange);
+  --btn-bg-hover: var(--orange-2);
   --btn-fg: #ffffff;
   --header-bg: rgba(255, 255, 255, .88);
   --dark-section: var(--navy);
@@ -57,9 +59,9 @@
   --bg-soft: #0f1b2e;
   --surface: #13213a;
   --strong: #ffffff;
-  --btn-bg: #eef2f8;
-  --btn-bg-hover: #ffffff;
-  --btn-fg: #0b2545;
+  --btn-bg: #f26d1f;
+  --btn-bg-hover: #ff8a3d;
+  --btn-fg: #ffffff;
   --header-bg: rgba(10, 19, 34, .85);
   --dark-section: #0e2342;
   --footer-bg: #060d18;
@@ -141,7 +143,7 @@ p  { margin: 0 0 1em; }
 }
 .btn:hover { transform: translateY(-2px); }
 .btn-primary { background: var(--btn-bg); color: var(--btn-fg); }
-.btn-primary:hover { background: var(--btn-bg-hover); box-shadow: 0 8px 20px rgba(11, 37, 69, .25); }
+.btn-primary:hover { background: var(--btn-bg-hover); box-shadow: 0 8px 20px rgba(234, 88, 12, .3); }
 .btn-accent { background: var(--accent); color: #fff; }
 .theme-margaritto .btn-accent { color: var(--ink); }
 .btn-outline { border-color: currentColor; color: var(--strong); background: transparent; }
@@ -327,7 +329,8 @@ p  { margin: 0 0 1em; }
 .brand-card p { max-width: 340px; color: var(--on-light); opacity: .8; }
 .brand-card ul { list-style: none; padding: 0; margin: 0 0 28px; display: flex; flex-wrap: wrap; gap: 8px; max-width: 340px; }
 .brand-card li { background: rgba(255,255,255,.7); padding: 6px 12px; border-radius: 999px; font-size: .85rem; font-weight: 600; color: var(--on-light); }
-.brand-card .btn { background: var(--navy); color: #fff; }
+.brand-card .btn { background: var(--btn-bg); color: var(--btn-fg); }
+.brand-card .btn:hover { background: var(--btn-bg-hover); }
 .brand-card .btn { margin-top: auto; align-self: flex-start; }
 .brand-card svg.art { position: absolute; right: -20px; bottom: -10px; width: 52%; max-width: 280px; pointer-events: none; }
 .brand-card--b svg.art { width: 30%; max-width: 170px; right: 10px; bottom: -40px; }
